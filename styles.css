@@ -11,22 +11,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	color: #000000;
+	color: orange;
 	font-size: 28pt;
 }
 
 h2 {
 	border-bottom: 1px solid #CCCCCC;
-	color: #000000;
+	color: orange;
 	font-size: 24px;
 }
 
 h3 {
 	font-size: 18px;
+	color: orange;
 }
 
 h4 {
 	font-size: 16px;
+	color: orange;
 }
 
 h5 {
