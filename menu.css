@@ -174,7 +174,7 @@ body {
   color: #ffffff;
   font-size: 3.6rem;
   text-decoration: none;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 .menu ul li a::after {
   position: absolute;
