@@ -20,6 +20,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
+  text-transform: uppercase;
 }
 
 .menu-toggle {
@@ -72,6 +73,7 @@ body {
   display: block;
   font-size: 1.8rem;
   opacity: 0;
+  text-transform: uppercase;
   -webkit-transition-property: opacity, -webkit-transform;
   -moz-transition-property: opacity, -moz-transform;
   transition-property: opacity, transform;
