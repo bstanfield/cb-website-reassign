@@ -25,6 +25,7 @@ body {
 }
 
 .menu-toggle {
+  text-transform: uppercase;
   position: absolute;
   top: 200px;
   left: 50%;
@@ -57,6 +58,7 @@ body {
   transition-delay: 0s, 0s, 0.2s, 0.2s, 0s;
 }
 .menu-toggle .label {
+  text-transform: uppercase;
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
   transition-property: opacity;
@@ -89,6 +91,7 @@ body {
   transition-delay: 1s, 1s;
 }
 .menu-toggle:hover {
+  text-transform: uppercase;
   border-color: orange;
   color: orange;
   -webkit-transition-delay: 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -96,6 +99,7 @@ body {
   transition-delay: 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .menu-toggle.open {
+  text-transform: uppercase;
   margin-left: -16px;
   border-color: orange;
   color: orange;
@@ -111,12 +115,14 @@ body {
   transition-delay: 0s, 0s, 0s, 0s, 0.2s;
 }
 .menu-toggle.open .label {
+  text-transform: uppercase;
   opacity: 0;
   -webkit-transition-delay: 0s;
   -moz-transition-delay: 0s;
   transition-delay: 0s;
 }
 .menu-toggle.open .close {
+  text-transform: uppercase;
   opacity: 1;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -128,6 +134,7 @@ body {
   transition-delay: 1s, 0s;
 }
 .menu-toggle.open:hover {
+  text-transform: uppercase;
   border-color: white;
   color: white;
 }
@@ -171,10 +178,12 @@ body {
   transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
 .menu ul li {
+  text-transform: uppercase;
   position: relative;
   text-align: center;
 }
 .menu ul li a {
+  text-transform: uppercase;
   padding: 0 0px;
   color: #ffffff;
   font-size: 3.6rem;
@@ -182,6 +191,7 @@ body {
   // text-transform: uppercase;
 }
 .menu ul li a::after {
+  text-transform: uppercase;
   position: absolute;
   top: 85%;
   right: 0px;
@@ -201,15 +211,18 @@ body {
   transition: width 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .menu ul li a:hover::after {
+  text-transform: uppercase; 
   left: 0px;
   right: auto;
   width: 100%;
 }
 .menu.open {
+  text-transform: uppercase;
   opacity: 1;
   pointer-events: auto;
 }
 .menu.open ul {
+  text-transform: uppercase;
   -webkit-transform: translate(-50%, -50%) scale(1);
   -moz-transform: translate(-50%, -50%) scale(1);
   -ms-transform: translate(-50%, -50%) scale(1);
