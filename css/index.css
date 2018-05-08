@@ -1,0 +1,591 @@
+@font-face {
+    font-family: 'Tiempos';
+    src: url(../fonts/TiemposHeadline-Medium.otf);
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(../fonts/ProximaNova-Regular.otf);
+}
+
+body {
+  color: #333333;
+  font-family: 'Proxima Nova';
+  padding: 0px;
+  line-height: 28px;
+  background-color: #f4f4f4;
+}
+
+
+h1 {
+  font-family: 'Tiempos';
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: 'Tiempos';
+  font-size: 30px;
+  font-weight: 200;
+  color: #424242;
+  line-height: 40px;
+}
+
+h3 {
+  font-family: 'Proxima Nova';
+  font-size: 20px;
+  color: #424242;
+  font-weight: normal;
+}
+
+h4 {
+  font-family: 'Proxima Nova';
+  font-size: 20px;
+  color: #424242;
+  font-weight: normal;
+
+}
+
+h5 {
+  font-family: 'Proxima Nova';
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 16px;
+  color: #424242;
+}
+
+a {
+  font-size: 16px;
+  color: #fcac42;
+  text-decoration: none !important;
+}
+
+/*FOR SEMANTIC STYLES*/
+.orange {
+  color: #fcac42;
+}
+
+.white {
+  color: white;
+}
+
+.low-opacity {
+  opacity: .8;
+}
+
+.button {
+  padding: 8px 25px 8px 25px;
+  width: max-content;
+  color: white;
+    background-color: rgba(252, 172, 66, 0.3);
+  border: 2px solid #fcac42;
+    border-radius: 3px;
+  font-family: 'Proxima Nova';
+    font-size: 16px;
+        font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  transition: .3s ease;
+}
+
+  .btn-bright {
+    margin-top: 35px;
+    background-color: rgba(252, 172, 66, 0);
+    color: #333333;
+  }
+
+  .btn-shiny {
+    background-color: rgba(252, 172, 66, 1);
+    margin: auto;
+  }
+
+
+  .btn-nav {
+    display: inline;
+    font-size: 14px;
+    background-color: white;
+    border: none;
+    color: #2d69e2;
+    padding: 15px 15px 15px 15px;
+    margin-left: 15px;
+  }
+
+  .button:hover {
+    background-color: rgba(252, 172, 66, 1);
+  }
+
+  .btn-nav:hover {
+    background-color: white;
+  }
+
+.centered {
+  text-align: center;
+}
+
+hr {
+  margin: 80px 0px 30px 0px;
+  border: 1px solid grey;
+}
+
+.v1 img {
+  width: 6px;
+  margin: auto;
+  margin-bottom: -60px;
+}
+
+  .v-bottom img {
+    margin-bottom: 0px;
+    margin-top: -18px;
+  }
+
+.number {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+  .number img {
+    width: 60px;
+  }
+
+  .n2 {
+    top: -20px;
+    right: 20px;
+  }
+
+.special-blue {
+  font-family: 'Proxima Nova';
+  color: #10295b;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-bottom: 30px;
+}
+
+/*END OF SEMANTIC STYLES*/
+
+/*FOR NAVIGATION*/
+.nav {
+  width: 100%;
+  height: 70px;
+  background-color: #2d69e2;
+  position: fixed;
+  z-index: 9000;
+
+}
+
+  .nav h3 {
+    color: white;
+  }
+
+.nav-content {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.nav-logo {
+  width: 220px;
+  height: 100%;
+  float: left;
+  margin-top: 5px;
+  margin-left: -10px;
+}
+
+  .nav-logo img {
+    width: 100%;
+  }
+
+.nav-links {
+  margin-top: 20px;
+  width: auto;
+  height: 100%;
+  float: right;
+  display: inline-block;
+}
+
+.nav-links a {
+  padding: 0 10px 0 10px;
+  color: white;
+  font-size: 18px;
+}
+
+/*END OF NAVIGATION*/
+
+.primary-container-hero {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.primary-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.smaller {
+  max-width: 1000px;
+}
+
+/*FOR HERO CARD*/
+.hero-card {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: 5px;
+  background-color: #2052ce;
+  background-image: url('../assets/cb-hero.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-text {
+  position: absolute;
+  left: 100px;
+  top: 80px;
+  width: 400px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: -15px;
+}
+
+.hero-image img {
+  position: absolute;
+  width: 700px;
+  height: auto;
+  right: 40px;
+  bottom: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*END OF HERO CARD*/
+
+/*PRIMARY HOMEPAGE CONTENT*/
+.introduction {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.icon img {
+  width: 200px;
+}
+
+.step {
+  text-align: center;
+  height: 100%;
+  min-height: 550px;
+}
+
+.apps {
+  width: 90%;
+  height: 100%;
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#large-img {
+  width: 80%;
+  max-width: 1000px;
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
+.img-rounded {
+  width: 300px;
+  border-radius: 5px;
+  float: right;
+  margin-right: 25px;
+}
+
+  .img-rounded2 {
+    float: left;
+    margin-right: 0px;
+  }
+
+.side-text {
+  width: 100%;
+  max-width: 400px;
+  float: left;
+  margin-left: 25px;
+}
+
+  .side-text2 {
+    float: right;
+    margin-left: 0px;
+  }
+
+.label {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.full-width {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  background-color: #e0e0e0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 20px;
+}
+
+  .fw-blue {
+    background-color: #cdd3e4 !important;
+    border-bottom: none;
+    padding-bottom: 30px;
+  }
+
+  .fw1 {
+      background-image: url('../assets/stock-researchers.png');
+      border-bottom: 5px solid #fcac42;
+  }
+
+  .fw2 {
+      background-image: url('../assets/stock-runner.png');
+      border-bottom: 5px solid #fcac42;
+  }
+
+  .fw3 {
+      background-image: url('../assets/stock-patients.png');
+  }
+
+
+  .card {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    padding: 15px 50px 15px 50px;
+    border-radius: 5px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+
+    .card:hover {
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15), 0 10px 5px rgba(0,0,0,0.15);
+    }
+
+    .c2 {
+      float: right;
+    }
+
+  .app-card {
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+    a .app-card {
+      color: #333333;
+    }
+
+.app-icon img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin: auto;
+}
+/*END OF PRIMARY HOMEPAGE CONTENT*/
+
+/*FOOTER CONTENT*/
+.footer {
+  padding-top: 30px;
+  margin-top: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: #cdd3e4;
+}
+
+.fheader {
+  font-size: 20px;
+  letter-spacing: 2px;
+
+  color: #10295b;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*LARGE MEDIA QUERIES*/
+@media (max-width: 1260px) {
+  .hero-image img {
+    width: 600px;
+  }
+
+  .step {
+    min-height: 500px ;
+  }
+}
+
+@media (max-width: 1000px) {
+  .primary-container-hero {
+    width: 100%;
+      padding-top: 60px;
+  }
+
+  .hero-card {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .hero-text {
+    left: 85px;
+  }
+
+  .hero-image img {
+    width: 550px;
+  }
+
+  .app-card {
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .step {
+    min-height: 200px ;
+  }
+}
+/*END OF LARGE MEDIA QUERIES*/
+
+/*MEDIUM MEDIA QUERIES*/
+@media (max-width: 800px) {
+  .hero-text {
+    top: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-text .button {
+    margin: auto;
+  }
+
+  .hero-image img {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+  }
+
+  .card {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+
+    .card .button {
+      margin: auto;
+    }
+
+    .c2 {
+      float: none;
+    }
+
+  .number {
+    display: none;
+  }
+
+  .apps {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    max-width: 800px !important;
+  }
+
+  .nav-logo {
+  display:none;
+}
+
+  .nav-content {
+    padding-top: 20px;
+  }
+
+  .nav-links {
+    float: none;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .btn-nav {
+    display: none;
+  }
+
+  .app-card {
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .container-map {
+    width: 100%;
+  }
+
+}
+/*END OF MEDIUM MEDIA QUERIES*/
+
+/*MOBILE MEDIA QUERY*/
+@media (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .primary-container {
+    width: 95%;
+  }
+  .card {
+
+  }
+
+  .introduction {
+    padding: 15px;
+  }
+
+}
