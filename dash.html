@@ -17,6 +17,19 @@
   <link rel=stylesheet type=text/css href="css/index.css">
 
   <style>
+      .card {
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+
+      a {
+        color: #333333;
+      }
+
+      a:hover {
+        color: #333333;
+      }
+
       .grid-container {
         display: grid;
         grid-gap: 10px;
@@ -56,21 +69,21 @@
     <h3>Say hello to the thousands of other patients, healthcare professionals, and researchers that belong to the Cancerbase family.</h3>
   </div>
 
-  <div class="card apps-card">
+  <a href="/"><div class="card apps-card">
     <div class="container">
       <div class="row">
         <div class="col-md-3">
           <div class="app-icon">
-            <img src="assets/apps/drop.png">
+            <img src="assets/apps/sideeffects.png">
           </div>
-            <h5>Infusion</h5>
+            <h5>Side Effects</h5>
             <h3>This is where the description of Infusion would appear.</h3>
         </div>
         <div class="col-md-3">
           <div class="app-icon">
-            <img src="assets/apps/drop.png">
+            <img src="assets/apps/horizon.png">
           </div>
-            <h5>Infusion</h5>
+            <h5>LifeStory</h5>
             <h3>This is where the description of Infusion would appear.</h3>
         </div>
         <div class="col-md-3">
@@ -89,8 +102,83 @@
         </div>
       </div>
     </div>
+    <br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="app-icon">
+            <img src="assets/apps/sideeffects.png">
+          </div>
+            <h5>Side Effects</h5>
+            <h3>This is where the description of Infusion would appear.</h3>
+        </div>
+        <div class="col-md-3">
+          <div class="app-icon">
+            <img src="assets/apps/horizon.png">
+          </div>
+            <h5>LifeStory</h5>
+            <h3>This is where the description of Infusion would appear.</h3>
+        </div>
+        <div class="col-md-3">
+          <div class="app-icon">
+            <img src="assets/apps/drop.png">
+          </div>
+            <h5>Infusion</h5>
+            <h3>This is where the description of Infusion would appear.</h3>
+        </div>
+        <div class="col-md-3">
+          <div class="app-icon">
+            <img src="assets/apps/drop.png">
+          </div>
+            <h5>Infusion</h5>
+            <h3>This is where the description of Infusion would appear.</h3>
+        </div>
+      </div>
+    </div>
+  </div></a>
+</div>
+
+<div class="primary-container container-map">
+    <div id="beforemap" class="ui-grid-col-12" style="display: block;
+      text-align: center; ">
+      <div class="introduction">
+             <h1>Your dot is on the map!</h1>
+             <h3>Congratulations! Bringing data to life is central to CancerBase's mission. This map shows where our users are around the globe, and you're the newest one!</h3>
+      </div>
+    </div>
+    <div id='map' style='width: 100%; height: 500px; display: block;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: rgba(63,63,63,0.09) 0 6px 24px;
+      border-radius: 4px;'></div>
+      <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoiY2FuY2VyYmFzZSIsImEiOiJjamc2cXNzbXIwdWVkMnFybjRrZDZrOXVpIn0.9S6W-shwFG434qQQMN-_1g';
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/cancerbase/cjg6s4vdc0wa82sqvpw0d477u'
+      });
+
+      // Add zoom and rotation controls to the map.
+      map.addControl(new mapboxgl.NavigationControl());
+      map.scrollZoom.disable();
+      </script>
+
+    <div class="grid-container">
+    <div class="grid-item" style="background-color: #fc7f00">Blood</div>
+    <div class="grid-item" style="background-color: #ebebeb">Lung</div>
+    <div class="grid-item" style="background-color: #454545; color: white;">Skin</div>
+    <div class="grid-item" style="background-color: #2afd2f">Lymphoma</div>
+    <div class="grid-item" style="background-color: #2bbbb3">Ovarian</div>
+    <div class="grid-item" style="background-color: #ffaae3">Breast</div>
+    <div class="grid-item" style="background-color: #fcc58d">Urinary</div>
+    <div class="grid-item" style="background-color: #f2c1bb">Endocrine</div>
+    <div class="grid-item" style="background-color: #aaaefb">Gastro</div>
+    <div class="grid-item" style="background-color: #4264FB">Colorectal</div>
+    <div class="grid-item" style="background-color: #fdec60">Bone</div>
+    <div class="grid-item" style="background-color: #3fab33">Adrenal</div>
   </div>
 </div>
+<br><br>
 
 
   <div class="footer">
