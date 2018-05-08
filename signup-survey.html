@@ -1,0 +1,191 @@
+<!doctype html>
+<head>
+
+
+  <title>Cancerbase | Welcome!</title>
+
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <meta charset=utf-8 />
+  <!-- <link href='https://www.mapbox.com/base/latest/base.css' rel='stylesheet' /> -->
+
+
+  <link rel='shortcut icon' href='path/to/favicon.ico' type='image/x-icon' />
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+  <link rel=stylesheet type=text/css href="css/bootstrap.css">
+  <link rel=stylesheet type=text/css href="css/bootstrap-theme.css">
+  <link rel=stylesheet type=text/css href="css/index.css">
+
+  <style>
+      .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 10px;
+      }
+      .grid-item {
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+        box-shadow: rgba(63,63,63,0.09) 0 6px 24px;
+        border-radius: 4px;
+      }
+  </style>
+</head>
+<body>
+
+<div class="nav">
+  <div class="nav-content">
+    <a href="index.html"><div class="nav-logo">
+      <img src="assets/logo-white.png">
+    </div></a>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Community</a>
+      <a href="signup.html">
+        <div class="button btn-nav">
+          SIGN UP
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="primary-container-hero">
+  <div class="introduction">
+    <h1>Push forward Cancer Research by sharing your story.</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 center-block">
+          <center>
+            <form>
+              <div class="form-flow">
+                <span class="input-label">Are you entering data for yourself or someone else?</span>
+                <br>
+                <div class="row">
+                    <div class="col-sm-6">
+                      <input class="form-input-radio" name="entering-data" type="radio" value="male"> Myself
+                    </div>
+                    <div class="col-sm-6">
+                      <input class="form-input-radio" name="entering-data" type="radio" value="female"> Someone Else
+                    </div>
+                  </div>
+                <br>
+                <br>
+                <span class="input-label">What's the closest city to where you live?</span>
+                <br>
+                <input class="form-input" name="city" value="Other people have said things like 'Los Angeles' or 'Shanghai'" type="text" onfocus="this.value=''">
+                <br>
+                <br>
+                <span class="input-label">What was your first diagnosis?</span>
+                <br>
+                <input class="form-input" name="diagnosis" value="e.g. 'Breast Cancer' or 'CLL'" type="text" onfocus="this.value=''">
+                <br>
+                <br>
+                <span class="input-label">When were you born?</span>
+                <br>
+                <input class="form-input" name="birthyear" value="1990" type="number" onfocus="this.value=''">
+                <br>
+                <br>
+                <span class="input-label">When was your cancer diagnosed?</span>
+                <br>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <input class="form-input" name="diagnosis-month" value="January" type="text" onfocus="this.value=''">
+                  </div>
+                  <div class="col-sm-6">
+                      <input class="form-input" name="diagnosis-year" value="2012" type="number" onfocus="this.value=''">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <span class="input-label">What was your sex at birth?</span>
+                <br>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <input class="form-input-radio" name="sex" type="radio" value="male"> Male
+                  </div>
+                  <div class="col-sm-6">
+                    <input class="form-input-radio" name="sex" type="radio" value="female"> Female
+                  </div>
+                </div>
+                <br>
+                <br>
+                <span class="input-label">What is your status today?</span>
+                <br>
+                <div class="form-input-select">
+                  <select name="status" class="form-input-select">
+                    <option value="no-evidence">No Evidence of Disease</option>
+                  </select>
+                </div>
+                <br>
+                <br>
+                <span class="input-label">Did your cancer spread?</span>
+                <br>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <input class="form-input-radio" name="cancer-spread" type="radio" value="yes"> Yes
+                  </div>
+                  <div class="col-sm-6">
+                    <input class="form-input-radio" name="cancer-spread" type="radio" value="no"> No
+                  </div>
+                </div>
+                <br>
+                <br>
+                <span class="input-label">If you'd like, please use your own words to tell us about your cancer. (Limited to 1000 characters)</span>
+                <br>
+                <textarea class="form-input" name="your-own-words"></textarea>
+                <br>
+                <br>
+
+                <a href="dash.html">
+                  <div class="button btn-shiny">
+                    SUBMIT
+                  </div>
+                </a>
+              </div>
+            </form>
+          </center>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  <h3>By signing up for an account on CancerBase, you will contribute to a research project with far reaching impact.</h3>
+  </div>
+</div>
+
+  <div class="footer">
+    <div class="primary-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5 class="fheader">PAGE LINKS</h5>
+              <a href="/"><p>Home</p></a>
+              <a href="/"><p>About</p></a>
+              <a href="/"><p>Community</p></a>
+              <a href="/"><p>Sign-up</p></a>
+              <a href="/"><p>Log-in</p></a>
+              <a href="/"><p>Mobile Apps</p></a>
+              <a href="/"><p>Contact</p></a>
+          </div>
+
+          <div class="col-md-3">
+            <h5 class="fheader">LEARN MORE</h5>
+              <a href="/"><p>CancerBase News</p></a>
+              <a href="/"><p>Medium Blog</p></a>
+              <a href="/"><p>Kuhn Lab @ USC</p></a>
+          </div>
+
+          <div class="col-md-6">
+            <iframe src="https://www.powr.io/plugins/form-builder/view?unique_label=5600c516_1525746963&external_type=iframe" width="100%" height="600" frameborder="0"></iframe>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
